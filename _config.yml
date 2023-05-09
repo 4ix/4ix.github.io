@@ -18,12 +18,12 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 4ix # the main title
+title: Jasper의 기술 블로그 # the main title
 
 tagline: 검색하다가 지쳐서 만들게 된 블로그 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  blockchain, ai
+  블록체인과 인공지능, 그리고 프론트엔드에 대한 내용을 다루고 있습니다.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://4ix.github.io"
