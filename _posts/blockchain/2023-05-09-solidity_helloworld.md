@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello World"
+title: "[Solidity] Hello World"
 categories: [Blockchain, Solidity]
 tags: [Blockchain, Solidity, Tutorial]
 ---
