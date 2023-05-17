@@ -8,9 +8,7 @@ tags: [frontend, react, props]
 ## 정의
 
 - 부모 컴포넌트로 부터 자식 컴포넌트에 데이터를 보낼 수 있게 하는 방법
-- 아래의 예제에서는 text와 inverted를 보냄
-
-## Example Code
+- 아래 코드에서는 text와 inverted를 보냄
 
 ```js
 function Btn({ text, inverted }) {
@@ -38,4 +36,23 @@ function App() {
     </div>
   );
 }
+```
+
+## Memo
+
+- props 값이 바뀌어도 re-render 방지
+
+```js
+const MemorizedBtn = React.memo(Btn);
+```
+
+## PropTypes
+
+- props로 넘기는 값을 잘못 넘겼을 때 에러를 보여줄 수 있음(실수 방지)
+
+```js
+Btn.propTypes = {
+  text: PropTypes.string.isRequired,
+  fontSize: PropTypes.number,
+};
 ```
