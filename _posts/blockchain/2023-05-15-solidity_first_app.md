@@ -2,13 +2,15 @@
 layout: post
 title: "[Solidity] First App"
 categories: [Blockchain, Solidity]
-tags: [Blockchain, Solidity, Tutorial]
+tags: [blockchain, solidity, tutorial]
 ---
 
 ## First App
-+ count라는 변수와, 그 수를 증감시키는 함수가 있는 컨트랙트
+
+- count라는 변수와, 그 수를 증감시키는 함수가 있는 컨트랙트
 
 ## Example Code
+
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;

@@ -2,7 +2,7 @@
 layout: post
 title: "[React] 리액트 State 개념"
 categories: [Frontend, React]
-tags: [Frontend, React]
+tags: [frontend, react, state]
 ---
 
 ## 정의
