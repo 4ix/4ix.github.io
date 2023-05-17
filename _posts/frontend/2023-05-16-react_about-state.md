@@ -15,6 +15,6 @@ tags: [Frontend, React]
 ```js
 const [counter, setCounter] = React.useState(0);
 const onClick = () => {
-  setCounter(counter + 1);
+  setCounter((current) => current + 1);
 };
 ```
