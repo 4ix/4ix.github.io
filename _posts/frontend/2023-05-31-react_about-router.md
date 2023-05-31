@@ -22,7 +22,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/movie" element={<Detail />}></Route>
+        <Route path="/movie:id" element={<Detail />}></Route>
         <Route path="/" element={<Home />}></Route>
       </Routes>
     </Router>
@@ -30,4 +30,12 @@ function App() {
 }
 
 export default App;
+```
+
+## Parameter
+
+- 라우트에서 id를 넘기고 나서 넘어간 페이지에서 해당 id를 확인할 수 있는 기능
+
+```js
+const { id } = useParams();
 ```
