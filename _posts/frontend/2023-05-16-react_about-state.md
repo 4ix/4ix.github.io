@@ -18,3 +18,10 @@ const onClick = () => {
   setCounter((current) => current + 1);
 };
 ```
+
+```js
+const [toDo, setToDo] = useState("");
+const [toDos, setToDos] = useState([]);
+setToDos((prev) => [toDo, ...prev]); // 리스트 추가 방법
+setToDo("");
+```
