@@ -14,6 +14,7 @@ npm install @tanstack/react-query
 ```
 
 - index.tsx
+- 
 ```js
 import { QueryClient, QueryClientProvider } from "react-query";
 
@@ -29,7 +30,9 @@ root.render(
     </React.StrictMode>
 );
 ```
+
 - coins.tsx
+- 
 ```js
 import { useQuery } from "react-query";
 ...
