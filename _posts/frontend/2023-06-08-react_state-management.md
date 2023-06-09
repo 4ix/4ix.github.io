@@ -56,3 +56,37 @@ const isDark = useRecoilValue(isDarkAtom);
 const setDarkAtom = useSetRecoilState(isDarkAtom);
 const toggleDarkAtom = () => setDarkAtom((prev) => !prev);
 ```
+
+### useRecoilState
+
+```js
+const [isDark, setDarkAtom] = useRecoilState(isDarkAtom);
+```
+
+### selector
+
+- 기존 state를 통해 새로운 state를 사용할 수 있음
+- atom의 output을 변환
+- get: state를 가져와서 수정된 값을 리턴
+- set: state를 직접 수정
+
+```js
+import { atom, selector } from "recoil";
+
+export const minuteState = atom({
+  key: "minutes",
+  default: 0,
+});
+
+export const hourSelector = selector({
+  key: "hours",
+  get: ({ get }) => {
+    const minutes = get(minuteState);
+    return minutes / 60;
+  },
+  set: ({ set }, newValue) => {
+    const minutes = Number(newValue) * 60;
+    set(minuteState, minutes);
+  },
+});
+```
